@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Blank Page - Vali Admin</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Main CSS-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Font-icon css-->
+</head>
+<body class="app sidebar-mini">
+	<!-- Navbar-->
+	<header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+		<!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+		<!-- Navbar Right Menu-->
+		<ul class="app-nav">
+			<li class="app-search">
+				<input class="app-search__input" type="search" placeholder="Search">
+				<button class="app-search__button"><i class="fa fa-search"></i></button>
+			</li>
+			<!--Notification Menu-->
+			<li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
+				<ul class="app-notification dropdown-menu dropdown-menu-right">
+					<li class="app-notification__title">No tienes notifiaciones.</li>
+					<li class="app-notification__footer"><a href="#">........</a></li>
+				</ul>
+			</li>
+			<!-- User Menu-->
+			<li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+				<ul class="dropdown-menu settings-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+					<li><a class="dropdown-item" href="#"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+					<li><a class="dropdown-item" href="p#"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<!-- Sidebar menu-->
+	<style type="text/css">
+		#component_Title{
+			justify-content: center;
+			background-color: #ffff;
+		}
+	</style>
+	<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+	<aside class="app-sidebar">
+		<div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="images/images.png" alt="User Image" style="height: 30px;width: 30px">
+			<div>
+				<p class="app-sidebar__user-name">John Doe</p>
+				<p class="app-sidebar__user-designation">Frontend Developer</p>
+			</div>
+		</div>
+		<ul class="app-menu">
+
+			<li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-user"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+				<ul class="treeview-menu">
+					<li><a class="treeview-item" href="form_Register.html"><i class="icon fa fa-circle-o"></i>Nuevo Registro</a></li>
+
+					<li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i>Listar</a></li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+	<main class="app-content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="bs-component">
+					<ol class="breadcrumb" id="component_Title">
+						<strong class="breadcrumb-item active" ><i class="app-menu__icon fa fa-edit"></i>Registro de Personal</strong>
+					</ol>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tile">
+					<div class="tile-body">
+						<form autocomplete="false" id="from" onsubmit="return false"   action="#"  onsubmit="return false">
+							<section class="invoice" >
+								<div class="row invoice-info">
+									<div class="col-2">
+										<a href="index.html" >&nbsp;<i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true" style="color: #009688"></i></a>
+									</div>
+									<div class="col-6">
+									</div>
+									<div class="col-4">
+									</div>
+								</div>
+
+								<div class="row invoice-info">
+									<div class="col-4">
+										<h5 class="mb-3 line-head" id="nav-breadcrumbs">Breadcrumbs</h5>
+										<div class="form-group">
+											<label for="inputDefault"><strong>RFC</strong></label>
+											<input class="form-control" id="RFC" type="text"   placeholder="Nombres" autocomplete="false" >
+
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Apellido Paterno</strong></label>
+											<input class="form-control" id="ApellidoPaterno" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Apellido Materno</strong></label>
+											<input class="form-control" id="ApellidoMaterno" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<h5 class="mb-3 line-head" id="nav-breadcrumbs">Breadcrumbs</h5>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Puesto</strong></label>
+											<input class="form-control" id="Puesto" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-group">
+											<label for="inputDefault"><strong>Nivel</strong></label>
+											<input class="form-control" id="Nivel" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>plaza</strong></label>
+											<input class="form-control" id="plaza" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Fecha Ingeso</strong></label>
+											<input class="form-control" id="Fecha Ingeso" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Fecha Base</strong></label>
+											<input class="form-control" id="Fecha Base " type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Relacion Laboral</strong></label>
+											<input class="form-control" id="Relacion Laboral " type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Depto. O Área de adscripción</strong></label>
+											<input class="form-control" id="Depto. O Área de adscripción" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Municipio</strong></label>
+											<input class="form-control" id="Municipio " type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Estatus</strong></label>
+											<input class="form-control" id=" Estatus" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+                                      <div class="col-4">
+										<div class="form-group">
+											<label for="inputDefault"><strong>Fecha Vacante</strong></label>
+											<input class="form-control" id="Fecha Vacante" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Motivo Vacante</strong></label>
+											<input class="form-control" id="Motivo Vacante" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Salario Mensual (Tabular)</strong></label>
+											<input class="form-control" id="Salario Mensual (Tabular) " type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<h5 class="mb-3 line-head" id="nav-breadcrumbs">Prestaciones </h5>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Desarrollo y Capacitación </strong></label>
+											<input class="form-control" id="DesarrolloYCapacitacin" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-group">
+											<label for="inputDefault"><strong>Previnsión Multiple</strong></label>
+											<input class="form-control" id="PrevensionMultiple" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Labores en condiciones insalubres</strong></label>
+											<input class="form-control" id="LaboresEnCondicionesInsalubres" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Estímulo por productividad </strong></label>
+											<input class="form-control" id="EstimuloPorProductividad" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Prima  de Antiguedad</strong></label>
+											<input class="form-control" id="PrimaDeAntiguedad" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="form-group">
+											<label for="inputDefault"><strong>Despensa</strong></label>
+											<input class="form-control" id="Despensa" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Compensación</strong></label>
+											<input class="form-control" id="Compensacion" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Total de percepciones mensuales</strong></label>
+											<input class="form-control" id="TotalDePercepcionesMensuales" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<h5 class="mb-3 line-head" id="nav-breadcrumbs">Aguinaldos</h5>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Primer Parte</strong></label>
+											<input class="form-control" id="Primer_Parte" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-group">
+											<label for="inputDefault"><strong>Segunda Parte</strong></label>
+											<input class="form-control" id="SegundaParte" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Prima Vacacional</strong></label>
+											<input class="form-control" id="Prima Vacacional" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Cualquier otro bono e incentivo otorgado</strong></label>
+											<input class="form-control" id="CualquierOtroBonoIncentivoOtorgado" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Total de percepciones anuales</strong></label>
+											<input class="form-control" id="TotalDePercepcionesAnuales" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-group">
+											<label for="inputDefault"><strong>NSS</strong></label>
+											<input class="form-control" id="NSS" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>CURP</strong></label>
+											<input class="form-control" id="CURP" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="inputDefault"><strong>Nombre Completo</strong></label>
+											<input class="form-control" id="NombreCompleto" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Clave</strong></label>
+											<input class="form-control" id="Clave" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Neto del empleado</strong></label>
+											<input class="form-control" id="NetoDelEmpleado" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+										<div class="form-group">
+											<label for="exampleSelect1"><strong>Plaza (campo extra 1</strong></label>
+											<input class="form-control" id="PlazaCampoExtra1" type="text"   placeholder="Nombres" autocomplete="false" >
+										</div>
+									</div>
+
+								</div>
+
+								<div class="tile-footer">
+									<div class="col-12 text-right">
+									<button   class="btn btn-primary" onclick="Registrar_personas();" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>
+									&nbsp;&nbsp;&nbsp;<a  id="ButtCancelar" class="btn btn-secondary" onclick="Cancelar_Registro();" ><i class="fa fa-fw fa-lg fa-times-circle" style="color: white;"></i><strong style="color: white;">Cancelar</strong></a>
+									</div>
+								</div>
+							</section>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<h4>Demo</h4><a class="btn btn-info" id="demoNotify" href="#">Sample Notification</a>
+	<h4>Demo</h4><a class="btn btn-info" id="demoSwal" href="#">Sample Alert</a>
+	<!-- Essential javascripts for application to work-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- The javascript plugin to display page loading on top-->
+	<script src="js/plugins/pace.min.js"></script>
+	<script type="text/javascript" src="js/plugins/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		$('#demoNotify').click(function(){
+			$.notify({
+				title: "Update Complete : ",
+				message: "Something cool is just updated!",
+				icon: 'fa fa-check' 
+			},{
+				type: "info"
+			});
+		});
+		$('#demoSwal').click(function(){
+			swal({
+				title: "Are you sure?",
+				text: "You will not be able to recover this imaginary file!",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonText: "Yes, delete it!",
+				cancelButtonText: "No, cancel plx!",
+				closeOnConfirm: false,
+				closeOnCancel: false
+			}, function(isConfirm) {
+				if (isConfirm) {
+					swal("Deleted!", "Your imaginary file has been deleted.", "success");
+				} else {
+					swal("Cancelled", "Your imaginary file is safe :)", "error");
+				}
+			});
+		});
+	</script>
+	<!-- Page specific javascripts-->
+	<!-- Google analytics script-->
+
+</body>
+</html>
