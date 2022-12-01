@@ -55,7 +55,7 @@ const expresiones = {
 	primaAntiguedad:/^.[0-9]{3,20}$/,
 	despensa:/^.[0-9]{3,20}$/,
 	compensacion:/^.[0-9]{3,20}$/,
-	percepcionMensual:/^.[0-9]{3,20}$/,
+	percepcionesMensual:/^.[0-9]{3,20}$/,
 	aguinaldoPrimera:/^.[0-9]{3,20}$/,
 	aguinaldoSegunda:/^.[0-9]{3,20}$/,
 	primaVacacional:/^.[0-9]{3,20}$/,
@@ -92,7 +92,7 @@ const campos = {
 	primaAntiguedad:false,
 	despensa:false,
 	compensacion:false,
-	percepcionMensual:false,
+	percepcionesMensual:false,
 	aguinaldoPrimera:false,
 	aguinaldoSegunda:false,
 	primaVacacional:false,
@@ -185,8 +185,8 @@ const validarFormulario = (e) => {
 		case "Compensacion":
 			validarCampo(expresiones.compensacion, e.target, 'compensacion');
 		break;
-		case "TotalPercepcionesMensuales":
-			validarCampo(expresiones.percepcionMensual, e.target, 'percepcionMensual');
+		case "PercepcionesMensual":
+			validarCampo(expresiones.percepcionesMensual, e.target, 'percepcionesMensual');
 		break;
 		case "AguinaldoPrimera":
 			validarCampo(expresiones.aguinaldoPrimera, e.target, 'aguinaldoPrimera');
@@ -200,7 +200,7 @@ const validarFormulario = (e) => {
 		case "BonoIncentivo":
 			validarCampo(expresiones.bonoIncentivo, e.target, 'bonoIncentivo');
 		break;
-		case "TotalPercepcionesAnuales":
+		case "PercepcionesAnual":
 			validarCampo(expresiones.percepcionesAnual, e.target, 'percepcionesAnual');
 		break;
 		case "NSS":
@@ -247,7 +247,7 @@ formulario.addEventListener('submit', (e) => {
 	if(campos.numEmpleado && campos.rfc && campos.nombres && campos.apellidoPaterno && campos.apellidoMaterno 
 		&&campos.puesto && campos.nivelCampo && campos.plaza  && campos.relacionLaboral && campos.departamentoArea && campos.municipio && campos.motivoVacante && campos.salarioMensual
 		&& campos.desarrolloCapacitacion && campos.previsionMultiple && campos.laboresCondicionInsalubre && campos.estimuloProductividad
-		&& campos.primaAntiguedad && campos.despensa && campos.compensacion && campos.percepcionMensual && campos.aguinaldoPrimera
+		&& campos.primaAntiguedad && campos.despensa && campos.compensacion && campos.percepcionesMensual && campos.aguinaldoPrimera
 		&& campos.aguinaldoSegunda && campos.primaVacacional && campos.bonoIncentivo && campos.percepcionesAnual && campos.nss &&
 		campos.curp && campos.nombreCompleto && campos.clave && campos.netoEmpleado && campos.fechaIngreso && campos.fechaBase &&
 		campos.fechaVacante){

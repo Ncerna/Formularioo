@@ -95,6 +95,7 @@
 						<div class="row">
 							<div class="col-lg-4">
 								<div class="form-group">
+									<input type="hidden" id="txtId" value="0" />
 									<label class="form-control-label" for="txt_numEmpleado">N° Empleado</label>
 									<input class="form-control" id="txt__numEmpleado" name="NumEmpleado" type="text"
 										placeholder="Enter Number" maxlength="4"
@@ -106,29 +107,31 @@
 									<label class="form-control-label" for="txt_apellidoPaterno">Apellido Paterno</label>
 									<input class="form-control" id="txt__apellidoPaterno" type="text"
 										name="ApellidoPaterno" placeholder="Enter Apellido paterno" maxlength="100"
-										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
-										((event.keyCode > 64) && (event.keyCode < 91)))"
+										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
+									((event.keyCode > 64) && (event.keyCode < 91)))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-									>
+
 								</div>
 							</div>
 							<div class="col-lg-4">
 								<div class="form-group">
 									<label class="form-control-label" for="txt__rfc">RFC</label>
 									<input class="form-control inputValue2" id="txt__rfc" type="text" name="RFC"
-										placeholder="Enter RFC" maxlength="12" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) || 
-											((event.keyCode > 96) && (event.keyCode < 123)) || ((event.keyCode > 64) && (event.keyCode < 91)))"
+										placeholder="Enter RFC" maxlength="12" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
+									((event.keyCode > 96) && (event.keyCode < 123)) || ((event.keyCode > 64) && (event.keyCode < 91)))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="txt__apellidoMaterno">Apellido
-										Materno</label>
+									<label class="form-control-label" for="txt__apellidoMaterno">
+										Apellido
+										Materno
+									</label>
 									<input class="form-control" id="txt__apellidoMaterno" type="text"
 										name="ApellidoMaterno" placeholder="Enter Apellido Materno" maxlength="100"
-										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
-											((event.keyCode > 64) && (event.keyCode < 91)))"
+										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
+									((event.keyCode > 64) && (event.keyCode < 91)))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-									>
+
 
 								</div>
 							</div>
@@ -147,16 +150,15 @@
 								<div class="form-group">
 									<label class="form-control-label" for="txt__nombres">Nombres</label>
 									<input class="form-control" id="txt__nombres" type="text" name="Nombres"
-										placeholder="Enter Nombres" maxlength="50" onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
+										placeholder="Enter Nombres" maxlength="50" onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
 									((event.keyCode > 64) && (event.keyCode < 91))||(event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-									>
+
 								</div>
 
 							</div>
 						</div>
 						<!--End-->
-
 						<!--Start Datos Laborales-->
 						<div class="tile-header">
 							<h3>Datos Laborales</h3>
@@ -166,10 +168,10 @@
 								<div class="form-group">
 									<label class="form-control-label" for="txt__puesto">Puesto</label>
 									<input class="form-control" id="txt__puesto" type="text" name="Puesto"
-										placeholder="Enter puesto" maxlength="100" maxlength="100" onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
-										((event.keyCode > 64) && (event.keyCode < 91)))"
+										placeholder="Enter puesto" maxlength="100" maxlength="100" onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
+									((event.keyCode > 64) && (event.keyCode < 91)))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-									>
+
 								</div>
 								<div class="form-group">
 									<label class="form-control-label" for="txt__fechaIngreso">Fecha Ingreso</label>
@@ -177,7 +179,7 @@
 										maxlength="12"
 										onkeypress=" return(((event.keyCode >= 47) && (event.keyCode < 58)))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-									>
+
 
 								</div>
 							</div>
@@ -193,8 +195,8 @@
 									<label class="form-control-label" for="txt__fechaBase">Fecha Base</label>
 									<input class="form-control" id="txt__fechaBase" type="date" name="FechaBase"
 										maxlength="12" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-									(event.keyCode==47))" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-									>
+											(event.keyCode==47))" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+
 
 								</div>
 							</div>
@@ -202,24 +204,25 @@
 								<div class="form-group">
 									<label class="form-control-label" for="txt__plaza">Plaza</label>
 									<input class="form-control" id="txt__plaza" type="text" name="Plaza"
-										placeholder="Enter Plaza" maxlength="50" onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
-										((event.keyCode > 64) && (event.keyCode < 91))||(event.keyCode == 32))"
+										placeholder="Enter Plaza" maxlength="50" onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
+									((event.keyCode > 64) && (event.keyCode < 91))||(event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="txt__relacionLaboral">Relacion
-										Laboral</label>
+									<label class="form-control-label" for="txt__relacionLaboral">
+										Relacion
+										Laboral
+									</label>
 									<input class="form-control" id="txt__relacionLaboral" type="text"
 										name="RelacionLaboral" placeholder="Enter Relacion Laboral" maxlength="100"
-										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
-										((event.keyCode > 64) && (event.keyCode < 91)))"
+										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
+									((event.keyCode > 64) && (event.keyCode < 91)))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 
 							</div>
 						</div>
 						<!--End-->
-
 						<!--Start Area Laboral-->
 						<div class="tile-header">
 							<h3>Area Laboral</h3>
@@ -227,19 +230,21 @@
 						<div class="row">
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label class="form-control-label" for="txt__departamentoArea">Deparatmento o Area
-										Adscripción</label>
+									<label class="form-control-label" for="txt__departamentoArea">
+										Deparatmento o Area
+										Adscripción
+									</label>
 									<input class="form-control" id="txt__departamentoArea" type="text"
 										name="DeparatmentoArea" placeholder="Enter Deparatmento" maxlength="100"
-										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
-										((event.keyCode > 64) && (event.keyCode < 91)) || ((event.keyCode > 47) && (event.keyCode < 58))||(event.keyCode == 32))"
+										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
+									((event.keyCode > 64) && (event.keyCode < 91)) || ((event.keyCode > 47) && (event.keyCode < 58))||(event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
 									<label class="form-control-label" for="txt__fechaVacante">Fecha Vacante</label>
 									<input class="form-control" id="txt__fechaVacante" type="date" name="FechaVacante"
 										maxlength="12" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-									(event.keyCode==47) || (event.keyCode == 32))"
+											(event.keyCode==47) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
@@ -249,15 +254,15 @@
 									<label class="form-control-label" for="txt__municipio">Municipio</label>
 									<input class="form-control" id="txt__municipio" type="text" name="Municipio"
 										placeholder="Enter Municipio" maxlength="100"
-										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) || 
+										onkeypress=" return( ((event.keyCode > 96) && (event.keyCode < 123)) ||
 									((event.keyCode > 64) && (event.keyCode < 91)) || ((event.keyCode > 47) && (event.keyCode < 58)) ||(event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
 									<label class="form-control-label" for="txt__motivoVacante">Motivo Vacante</label>
 									<input class="form-control" id="txt__motivoVacante" type="text" name="MotivoVacante"
-										placeholder="Enter Motivo Vacante" maxlength="50" onkeypress="return(((event.keyCode > 96) && 
-									(event.keyCode < 123)) || ((event.keyCode > 64) && (event.keyCode < 91)) || (event.keyCode == 32))" oninput="if(this.value.length > this.maxLength) 
+										placeholder="Enter Motivo Vacante" maxlength="50" onkeypress="return(((event.keyCode > 96) &&
+									(event.keyCode < 123)) || ((event.keyCode > 64) && (event.keyCode < 91)) || (event.keyCode == 32))" oninput="if(this.value.length > this.maxLength)
 									this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
@@ -280,14 +285,13 @@
 									<input class="form-control" id="txt__salarioMensual" type="text"
 										name="SalarioMensual" placeholder="Enter Salario Mensual" maxlength="20"
 										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 
 							</div>
 						</div>
 						<!--End-->
-
 						<!-- Start Prestaciones Laborales-->
 						<div class="tile-header">
 							<h3>Prestaciones Laborales</h3>
@@ -295,68 +299,77 @@
 						<div class="row">
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label class="form-control-label" for="txt__desarrolloCapacitacion">Desarrollo y
-										Capacitación</label>
+									<label class="form-control-label" for="txt__desarrolloCapacitacion">
+										Desarrollo y
+										Capacitación
+									</label>
 									<input class="form-control" id="txt__desarrolloCapacitacion" type="text"
 										name="DesarrolloCapacitacion" placeholder="Enter Desarrollo" maxlength="20"
 										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="txt__estimuloProductividad">Estimulo por
-										Actividad</label>
+									<label class="form-control-label" for="txt__estimuloProductividad">
+										Estimulo por
+										Actividad
+									</label>
 									<input class="form-control" id="txt__estimuloProductividad" type="text"
 										name="EstimuloProductividad" placeholder="Enter Estimulo" maxlength="20"
 										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
 							</div>
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label class="form-control-label" for="txt__previsionMultiple">Previsión
-										Multiple</label>
+									<label class="form-control-label" for="txt__previsionMultiple">
+										Previsión
+										Multiple
+									</label>
 									<input class="form-control" id="txt__previsionMultiple" type="text"
 										name="PrevisionMultiple" placeholder="Enter Previsión" maxlength="20"
 										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="txt__primaAntiguedad">Prima
-										Antiguedad</label>
+									<label class="form-control-label" for="txt__primaAntiguedad">
+										Prima
+										Antiguedad
+									</label>
 									<input class="form-control" id="txt__primaAntiguedad" type="text"
 										name="PrimaAntiguedad" placeholder="Enter Prima Antiguedad" maxlength="20"
 										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
 							</div>
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label class="form-control-label" for="txt__laboresCondicionInsalubre">Labores
+									<label class="form-control-label" for="txt__laboresCondicionInsalubre">
+										Labores
 										Condiciones
-										Insalubres</label>
+										Insalubres
+									</label>
 									<input class="form-control" id="txt__laboresCondicionInsalubre" type="text"
 										name="LaboresCondicionInsalubre" placeholder="Enter Condiociones" maxlength="20"
 										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
 									<label class="form-control-label" for="txt__despensa">Despensa</label>
 									<input class="form-control" id="txt__despensa" type="text" name="Despensa"
 										placeholder="Enter Despensa" maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 							</div>
 						</div>
 						<!--End-->
-
 						<!--Otros Datos-->
 						<div class="tile-header">
 							<h3>Otros Datos</h3>
@@ -367,25 +380,29 @@
 									<label class="form-control-label" for="txt__compensacion">Compensación</label>
 									<input class="form-control" id="txt__compensacion" type="text" name="Compensacion"
 										placeholder="Enter Compensación" maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="txt__aguinaldoSegunda">Aguinaldo Segunda
-										Parte</label>
+									<label class="form-control-label" for="txt__aguinaldoSegunda">
+										Aguinaldo Segunda
+										Parte
+									</label>
 									<input class="form-control" id="txt__aguinaldoSegunda" type="text"
 										name="AguinaldoSegunda" placeholder="Enter Aguinaldo Segunda Parte"
 										maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="txt__percepcionesAnual">Total Percepciones
-										Anuales</label>
+									<label class="form-control-label" for="txt__percepcionesAnual">
+										Total Percepciones
+										Anuales
+									</label>
 									<input class="form-control" id="txt__percepcionesAnual" type="text"
-										name="TotalPercepcionesAnuales" placeholder="Enter Percepciones Anuales"
-										maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+										name="PercepcionesAnual" placeholder="Enter Percepciones Anuales" maxlength="20"
+										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
@@ -394,30 +411,34 @@
 									<input class="form-control" id="txt__nombreCompleto" type="text"
 										name="NombreCompleto" placeholder="Enter Nombre Completo" maxlength="120"
 										onkeypress=" return(((event.keyCode > 64) && (event.keyCode < 91))
-										|| ((event.keyCode > 96) && (event.keyCode < 123)) ||(event.keyCode == 44)  || (event.keyCode == 32))"
+									|| ((event.keyCode > 96) && (event.keyCode < 123)) ||(event.keyCode == 44)  || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
 
 								<div class="form-group">
-									<label class="form-control-label" for="txt_plazaExtra">Plaza (Extra
-										Opcional)</label>
-									<input class="form-control" id="txt_plazaExtra" type="text" name="PlazaExtra"
-										placeholder="Enter Nombre Completo" maxlength="120" name="Plaza"
+									<label class="form-control-label" for="txt__plazaExtra">
+										Plaza (Extra
+										Opcional)
+									</label>
+									<input class="form-control" id="txt__plazaExtra" type="text" name="PlazaExtra"
+										placeholder="Enter Plaza extra" maxlength="120" name="Plaza"
 										onkeypress=" return(((event.keyCode > 64) && (event.keyCode < 91))
-										|| ((event.keyCode > 47) && (event.keyCode < 58))||((event.keyCode > 96) && (event.keyCode < 123)) || (event.keyCode == 32))"
+									|| ((event.keyCode > 47) && (event.keyCode < 58))||((event.keyCode > 96) && (event.keyCode < 123)) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
 							</div>
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label class="form-control-label" for="txt__percepcionMensual">Total Percepciones
-										Mensuales</label>
-									<input class="form-control" id="txt__percepcionMensual" type="text"
-										name="TotalPercepcionesMensuales" placeholder="Enter Percepciones mensuales"
+									<label class="form-control-label" for="txt__percepcionesMensual">
+										Total Percepciones
+										Mensuales
+									</label>
+									<input class="form-control" id="txt__percepcionesMensual" type="text"
+										name="PercepcionesMensual" placeholder="Enter Percepciones mensuales"
 										maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
@@ -426,7 +447,7 @@
 									<input class="form-control" id="txt__primaVacacional" type="text"
 										name="PrimaVacacional" placeholder="Enter Prima Vacacional" maxlength="20"
 										onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
@@ -443,41 +464,45 @@
 									<input class="form-control" id="txt__clave" type="text" name="Clave"
 										placeholder="Enter Clave" maxlength="16"
 										onkeypress=" return(((event.keyCode > 64) && (event.keyCode < 91))
-										|| ((event.keyCode > 96) && (event.keyCode < 123)) || ((event.keyCode > 47) && (event.keyCode < 58)) || (event.keyCode == 32))"
+									|| ((event.keyCode > 96) && (event.keyCode < 123)) || ((event.keyCode > 47) && (event.keyCode < 58)) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
 							</div>
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label class="form-control-label" for="txt__aguinaldoPrimera">Aguinaldo Primera
-										Parte</label>
+									<label class="form-control-label" for="txt__aguinaldoPrimera">
+										Aguinaldo Primera
+										Parte
+									</label>
 									<input class="form-control" id="txt__aguinaldoPrimera" type="text"
 										name="AguinaldoPrimera" placeholder="Enter Aguinaldo Primera Parte"
 										maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="txt__bonoIncentivo">Bono o Incentivo
-										Otorgado</label>
+									<label class="form-control-label" for="txt__bonoIncentivo">
+										Bono o Incentivo
+										Otorgado
+									</label>
 									<input class="form-control" id="txt__bonoIncentivo" type="text" name="BonoIncentivo"
 										placeholder="Enter Bono o Incentivo" maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
 									<label class="form-control-label" for="txt__curp">CURP</label>
 									<input class="form-control" id="txt__curp" type="text" name="CURP"
 										placeholder="Enter CURP" maxlength="20" onkeypress=" return(((event.keyCode > 64) && (event.keyCode < 91)) ||
-										((event.keyCode > 47) && (event.keyCode < 58)))"
+									((event.keyCode > 47) && (event.keyCode < 58)))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 								</div>
 								<div class="form-group">
 									<label class="form-control-label" for="txt__netoEmpleado">Neto del Empleado</label>
 									<input class="form-control" id="txt__netoEmpleado" type="text" name="NetoEmpleado"
 										placeholder="Enter Neto Empleado" maxlength="20" onkeypress=" return(((event.keyCode > 47) && (event.keyCode < 58)) ||
-										(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
+												(event.keyCode == 44) || (event.keyCode == 46) || (event.keyCode == 36) || (event.keyCode == 32))"
 										oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
 								</div>
@@ -485,20 +510,26 @@
 						</div>
 						<!--End-->
 						<div class="formulario__mensaje" id="formulario__mensaje">
-							<p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <b>Error:</b> Por favor
-								rellena el formulario correctamente. </p>
+							<p>
+								<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <b>Error:</b> Por favor
+								rellena el formulario correctamente.
+							</p>
 						</div>
 
 						<div class="tile-footer formulario__grupo formulario__grupo-btn-enviar">
-							<button class="btn btn-primary formulario__btn btn-register" type="submit"
-								id="">Submit</button>
-							<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
-								exitosamente!</p>
+							<button class="btn btn-primary formulario__btn btn-register" type="submit">
+								Submit
+							</button>
+							<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+								Formulario enviado
+								exitosamente!
+							</p>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
+
 	</main>
 
 
