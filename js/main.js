@@ -37,7 +37,6 @@ const expresiones = {
 	nombres: /^[a-zA-ZÀ-ÿ\s]{4,100}$/,
 	apellidoPaterno: /^[a-zA-ZÀ-ÿ\s]{4,100}$/,
 	apellidoMaterno: /^[a-zA-ZÀ-ÿ\s]{4,100}$/,
-	genero:/^[A-Z]{4,12}$/, 
 	fechaIngreso:/^.{4,12}$/,
 	fechaBase:/^.{4,12}$/,
 	fechaVacante:/^.{4,12}$/,
@@ -47,7 +46,6 @@ const expresiones = {
 	relacionLaboral:/^[a-zA-ZÀ-ÿ\s]{4,100}$/,
 	departamentoArea:/^[a-zA-ZÀ-ÿ\s]{4,100}$/,
 	municipio:/^[a-zA-ZÀ-ÿ\s]{4,100}$/,
-	status: /^[a-zA-Z]{4,10}$/,
 	motivoVacante:/^[a-zA-ZÀ-ÿ\s]{4,50}$/,
 	salarioMensual:/^.[0-9]{3,20}$/,
 	desarrolloCapacitacion:/^.[0-9]{3,20}$/,
@@ -67,7 +65,7 @@ const expresiones = {
 	curp: /^[0-9A-Z]{4,20}$/,
 	nombreCompleto:/^.[a-zA-ZÀ-ÿ\s]{6,120}$/,
 	clave:/^[0-9a-zA-Z]{8,16}$/,
-	netoEmpleado:/^.[0-9]{3,30}$/
+	netoEmpleado:/^.[0-9]{3,20}$/
 }
 
 const campos = {
@@ -79,14 +77,12 @@ const campos = {
 	fechaIngreso:false,
 	fechaBase:false,
 	fechaVacante:false,
-	genero:false, 
 	puesto:false,
 	nivelCampo:false,
 	plaza:false,
 	relacionLaboral:false,
 	departamentoArea:false,
 	municipio:false,
-	status:false,
 	motivoVacante:false,
 	salarioMensual:false,
 	desarrolloCapacitacion:false,
@@ -117,9 +113,7 @@ const validarFormulario = (e) => {
 		case "RFC":
 			validarCampo(expresiones.rfc, e.target, 'rfc');
 		break;
-		case "Genero":
-			validarCampo(expresiones.genero, e.target, 'genero');
-		break;
+		
 		case "FechaIngreso":
 			validarCampo(expresiones.fechaIngreso, e.target, 'fechaIngreso');
 		break;
@@ -163,9 +157,7 @@ const validarFormulario = (e) => {
 		case "Municipio":
 			validarCampo(expresiones.municipio, e.target, 'municipio');
 		break;
-		case "Status":
-			validarCampo(expresiones.status, e.target, 'status');
-		break;
+		
 		case "MotivoVacante":
 			validarCampo(expresiones.motivoVacante, e.target, 'motivoVacante');
 		break;
@@ -252,9 +244,8 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	
-	if(campos.numEmpleado && campos.rfc && campos.nombres && campos.apellidoPaterno && campos.apellidoMaterno && campos.genero
-		&&campos.puesto && campos.nivelCampo && campos.plaza  && campos.relacionLaboral &&
-		campos.departamentoArea && campos.municipio && campos.status && campos.motivoVacante && campos.salarioMensual
+	if(campos.numEmpleado && campos.rfc && campos.nombres && campos.apellidoPaterno && campos.apellidoMaterno 
+		&&campos.puesto && campos.nivelCampo && campos.plaza  && campos.relacionLaboral && campos.departamentoArea && campos.municipio && campos.motivoVacante && campos.salarioMensual
 		&& campos.desarrolloCapacitacion && campos.previsionMultiple && campos.laboresCondicionInsalubre && campos.estimuloProductividad
 		&& campos.primaAntiguedad && campos.despensa && campos.compensacion && campos.percepcionMensual && campos.aguinaldoPrimera
 		&& campos.aguinaldoSegunda && campos.primaVacacional && campos.bonoIncentivo && campos.percepcionesAnual && campos.nss &&
@@ -263,14 +254,22 @@ formulario.addEventListener('submit', (e) => {
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+			document.getElementsByClassName('form-control').removeClass('is-valid');
 		}, 5000);
 
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
+
+			
 		});
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+		setTimeout(() => {
+			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+		}, 8000);
+		
 	}
 });
